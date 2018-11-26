@@ -3,6 +3,8 @@ using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityStandardAssets.Utility;
 using Random = UnityEngine.Random;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace UnityStandardAssets.Characters.FirstPerson
 {
@@ -30,6 +32,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] private AudioClip m_JumpSound;           // the sound played when character leaves the ground.
         [SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
         [SerializeField] private AudioClip m_Bibi;
+        public Slider healthBar;
 
         private Camera m_Camera;
         private bool m_Jump;
@@ -48,6 +51,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
         int tick=0;
         int savedInt=-1;
         GameObject pip;
+        GameObject menu;
+        bool pause;
+
 
         // Use this for initialization
         private void Start()
@@ -64,15 +70,38 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
             m_UI = GameObject.Find("Canvas");
+            menu = GameObject.Find("Panel");
             pip = GameObject.CreatePrimitive(PrimitiveType.Sphere);
             pip.SetActive(false);
-            // m_UI.SetActive(false);
+            menu.SetActive(false);
+            setBar();
+            pause = false;
         }
 
+        private void setBar()
+        {
+            healthBar.value = m_DataIntegrity / 10f;
+        }
 
         // Update is called once per frame
         private void Update()
         {
+            //pause
+            if (Input.GetKeyUp(KeyCode.Escape))
+            {
+                if (!pause)
+                {
+                    menu.SetActive(true);
+                    m_MouseLook.SetCursorLock(false);
+                    pause = true;
+                }
+                else
+                {
+                    menu.SetActive(false);
+                    m_MouseLook.SetCursorLock(true);
+                    pause = false;
+                }
+            }
             
             //set check point
             if (Input.GetKeyUp(KeyCode.E))
@@ -87,6 +116,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 transform.position = pip.transform.position;
                 m_DataIntegrity = savedInt;
+                setBar();
             }
 
             // code for showing minimap
@@ -210,7 +240,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
                     //check if the colliders overlapping after tranformation
                     transform.position = curPos;
                     m_DataIntegrity--;
-                    Debug.Log(m_DataIntegrity + "/10");
+                    //Debug.Log(m_DataIntegrity + "/10");
+                    setBar();
                 }
             }
 

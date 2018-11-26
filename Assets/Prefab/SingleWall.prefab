@@ -26,7 +26,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1236443033337078
 GameObject:
   m_ObjectHideFlags: 1
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 33667326450969984}
   - component: {fileID: 23394429289806516}
   - component: {fileID: 114298070842435754}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Plane (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1278548352924916
 GameObject:
@@ -71,7 +71,7 @@ GameObject:
   - component: {fileID: 33627494808564328}
   - component: {fileID: 23061905261640640}
   - component: {fileID: 114003162685291684}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Plane (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 4037172271296820}
   - component: {fileID: 33876472992310904}
   - component: {fileID: 23245859237162568}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Plane (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1695584972837424
 GameObject:
@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 33291399809214032}
   - component: {fileID: 23101766562546220}
   - component: {fileID: 114442585366176966}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Plane (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -143,7 +143,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1921556211832704
 GameObject:
   m_ObjectHideFlags: 1
@@ -155,7 +155,7 @@ GameObject:
   - component: {fileID: 33830520625924820}
   - component: {fileID: 23634151758639406}
   - component: {fileID: 114384687532814724}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Plane (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1964722814580720
 GameObject:
@@ -188,7 +188,7 @@ GameObject:
   - component: {fileID: 33890914181295508}
   - component: {fileID: 23727128098257466}
   - component: {fileID: 114061505770041722}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Plane (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -205,7 +205,7 @@ GameObject:
   - component: {fileID: 4115641991511236}
   - component: {fileID: 33983541453854752}
   - component: {fileID: 23271590636704992}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Plane (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -223,7 +223,7 @@ GameObject:
   - component: {fileID: 33503688637760232}
   - component: {fileID: 23299518113416966}
   - component: {fileID: 114921533442459968}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Plane (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -337,15 +337,15 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1269455016677180}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.55, y: -0.24, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 11.74, y: -0.23999989, z: -11.910001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4171429098877246}
   - {fileID: 4188159771114836}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
 --- !u!4 &4463257843690624
 Transform:
   m_ObjectHideFlags: 1
@@ -418,8 +418,8 @@ MeshRenderer:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1278548352924916}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -453,8 +453,8 @@ MeshRenderer:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1695584972837424}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -488,8 +488,8 @@ MeshRenderer:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1302417302280126}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -523,8 +523,8 @@ MeshRenderer:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1966390345112562}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -558,8 +558,8 @@ MeshRenderer:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1992260777446864}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -593,8 +593,8 @@ MeshRenderer:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1236443033337078}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -628,8 +628,8 @@ MeshRenderer:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1921556211832704}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -663,8 +663,8 @@ MeshRenderer:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1964722814580720}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -755,14 +755,14 @@ Light:
   m_GameObject: {fileID: 1724397080917962}
   m_Enabled: 1
   serializedVersion: 8
-  m_Type: 3
+  m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
-  m_SpotAngle: 30
+  m_SpotAngle: 36
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -776,7 +776,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 12, y: 4}
   m_BounceIntensity: 1
@@ -792,14 +792,14 @@ Light:
   m_GameObject: {fileID: 1143618433458946}
   m_Enabled: 1
   serializedVersion: 8
-  m_Type: 3
+  m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -813,7 +813,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 12, y: 4}
   m_BounceIntensity: 1
@@ -833,7 +833,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shuffleInterval: 5
-  pivit: 0.3
+  speedP: 0.2
+  tileXP: 0.3
+  rat: 1.7777778
 --- !u!114 &114061505770041722
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -846,7 +848,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shuffleInterval: 5
-  pivit: 0.4
+  speedP: 0.2
+  tileXP: 0.3
+  rat: 1.7777778
 --- !u!114 &114298070842435754
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -859,7 +863,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shuffleInterval: 5
-  pivit: 0.4
+  speedP: 0.3
+  tileXP: 0.4
+  rat: 1
 --- !u!114 &114384687532814724
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -872,7 +878,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shuffleInterval: 5
-  pivit: 0.4
+  speedP: 0.3
+  tileXP: 0.4
+  rat: 1
 --- !u!114 &114442585366176966
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -885,7 +893,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shuffleInterval: 5
-  pivit: 0.4
+  speedP: 0.3
+  tileXP: 0.4
+  rat: 1
 --- !u!114 &114921533442459968
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -898,4 +908,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shuffleInterval: 5
-  pivit: 0.4
+  speedP: 0.3
+  tileXP: 0.4
+  rat: 1

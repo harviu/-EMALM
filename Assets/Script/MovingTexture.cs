@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class MovingTexture : MonoBehaviour {
 	public float shuffleInterval = 5f;
-    public float pivit = 0.4f;
+    public float speedP = 0.3f;
+    public float tileXP = 0.4f;
+    public float rat = 1;
 
     float lastShuffle;
     float offsetX;
     float offsetY;
-    float tile, scollY,z;
+    float tileX,tileY, scollY,z;
     Renderer r;
 
 
@@ -22,10 +24,12 @@ public class MovingTexture : MonoBehaviour {
 
         offsetX = Random.Range(0f, 1f);
         offsetY = Random.Range(0f, 1f);
-        scollY = Random.Range(0.05f, 0.24f);
+        scollY = Random.Range(0f, speedP);
 
-        tile = Random.Range(0.2f, 0.5f);
-        r.material.mainTextureScale = new Vector2(tile, tile);
+        tileX = Random.Range(0.2f, tileXP);
+        tileY = tileX/rat;
+
+        r.material.mainTextureScale = new Vector2(tileX, tileY);
         //Debug.Log(scollY);
     }
 	// Update is called once per frame
@@ -34,7 +38,7 @@ public class MovingTexture : MonoBehaviour {
         {
             lastShuffle = Time.time;
             
-            scollY = Random.Range(pivit / 2 - 0.05f, pivit / 2 + 0.05f);
+            scollY = Random.Range(0f, speedP);
         }
 
 		offsetY += Time.deltaTime *scollY;
