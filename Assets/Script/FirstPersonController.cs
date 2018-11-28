@@ -71,7 +71,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 			m_MouseLook.Init(transform , m_Camera.transform);
             m_UI = GameObject.Find("Canvas");
             menu = GameObject.Find("Panel");
-            pip = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+            pip = GameObject.Find("Pip");
             pip.SetActive(false);
             menu.SetActive(false);
             setBar();
@@ -334,6 +334,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
             // keep track of whether or not the character is walking or running
             m_IsWalking = !Input.GetKey(KeyCode.LeftShift);
 #endif
+            //disable running
+            m_IsWalking = true;
+
             // set the desired speed to be walking or running
             speed = m_IsWalking ? m_WalkSpeed : m_RunSpeed;
             m_Input = new Vector2(horizontal, vertical);
