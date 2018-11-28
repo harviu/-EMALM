@@ -8764,6 +8764,45 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1695584972837424, guid: 82da4089357ed1d448739c40246f0eb0, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1992260777446864, guid: 82da4089357ed1d448739c40246f0eb0, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451534303868008, guid: 82da4089357ed1d448739c40246f0eb0, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 2.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1236443033337078, guid: 82da4089357ed1d448739c40246f0eb0, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1921556211832704, guid: 82da4089357ed1d448739c40246f0eb0, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114003162685291684, guid: 82da4089357ed1d448739c40246f0eb0,
+        type: 2}
+      propertyPath: speedP
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114003162685291684, guid: 82da4089357ed1d448739c40246f0eb0,
+        type: 2}
+      propertyPath: tileXP
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114003162685291684, guid: 82da4089357ed1d448739c40246f0eb0,
+        type: 2}
+      propertyPath: rat
+      value: 0.5625
+      objectReference: {fileID: 0}
+    - target: {fileID: 4569835047481346, guid: 82da4089357ed1d448739c40246f0eb0, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 2.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82da4089357ed1d448739c40246f0eb0, type: 2}
   m_IsPrefabAsset: 0

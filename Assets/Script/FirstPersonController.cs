@@ -86,6 +86,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
         // Update is called once per frame
         private void Update()
         {
+            //setbar every frame
+            setBar();
             //pause
             if (Input.GetKeyUp(KeyCode.Escape))
             {
