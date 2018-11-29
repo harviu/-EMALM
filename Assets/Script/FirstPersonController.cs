@@ -52,6 +52,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
         int savedInt=-1;
         GameObject pip;
         GameObject menu;
+        GameObject tutor;
+        bool tutorShown;
         bool pause;
 
 
@@ -76,6 +78,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
             menu.SetActive(false);
             setBar();
             pause = false;
+            tutor = GameObject.Find("Tutor");
+            tutorShown = true;
         }
 
         private void setBar()
@@ -119,6 +123,21 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 transform.position = pip.transform.position;
                 m_DataIntegrity = savedInt;
                 setBar();
+            }
+
+            //showing help
+            if (Input.GetKeyDown(KeyCode.H))
+            {
+                if (tutorShown)
+                {
+                    tutor.SetActive(false);
+                    tutorShown = false;
+                }
+                else
+                {
+                    tutor.SetActive(true);
+                    tutorShown = true;
+                }
             }
 
             // code for showing minimap
