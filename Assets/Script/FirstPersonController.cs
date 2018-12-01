@@ -196,7 +196,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             AudioArray[0].dopplerLevel = 5f;
             AudioArray[0].pitch = 1f;
             AudioArray[1].volume = 1 - m_DataIntegrity / 10.0f;
-            float interval = dis / 100f * 1.7f + 0.3f; // at which distance the latency is 2s
+            float interval = dis / 100f * 1.7f + 0.889f; // at which distance the latency is 2s
             float ticks = interval / Time.deltaTime;
             tick++;
             if (tick >= ticks) //if reached tick interval
